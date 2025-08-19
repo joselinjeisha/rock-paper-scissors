@@ -1,0 +1,151 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    background-image: url(bg5.avif);
+    background-size: cover;       
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.main{
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-width: 900px;
+    width: 100%;
+}
+
+.sec-1{
+    display: flex;
+    gap: 50px;
+}
+
+
+#col2 img,
+#col3 img {
+  max-width: 120px;
+  width: 100%;
+  height: auto;
+  margin-right: 60px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  background: #f9f9f9;
+}
+
+
+#col1,#col4{
+    align-content: center;
+}
+
+.sec-2{
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    margin-top: 20px;
+}
+
+#opponent-selection{
+    height: 240px;
+    width: 240px;
+}
+
+#my-selection{
+    height: 240px;
+    width: 240px;
+}
+
+#options{
+    width: 400px;
+    height: 100px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+#options img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+#options img{
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#reset{
+    border: none;
+  padding: 14px 28px;
+  cursor: pointer;
+  background-color: #cd3344; /* strong red */
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4); /* makes it stand out */
+  transition: transform 0.2s, background 0.3s, box-shadow 0.3s;
+  transform: scale(1.05);
+}
+
+#reset:hover {
+ background-color: #e74c3c; /* brighter red */
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.6);
+}
+
+@media (max-width: 768px) {
+  .sec-1 {
+    grid-template-columns: 1fr;
+  }
+
+  #col2 img,
+  #col3 img {
+    max-width: 90px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  #options img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .main {
+    padding: 15px;
+  }
+
+  #options img {
+    width: 70px;
+    height: 70px;
+  }
+
+  #reset {
+    width: 100%;
+    padding: 12px;
+  }
+}

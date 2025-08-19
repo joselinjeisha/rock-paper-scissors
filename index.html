@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <!-- <img src="title.gif" class="title" height="80px" width="200px"> -->
+    <div class="main">
+        <div class="sec-1">
+            <div id="col1">
+                <h2>Opponent core : <span id="opponent-point">0</span></h2>
+            </div>
+            <div id="col2">
+                <img id="opponent-selection"/>
+            </div>
+            <div id="col3">
+                <img id="my-selection"/>
+            </div>
+            <div id="col4">
+                <h2>My Score : <span id="my-point">0</span></h2>
+            </div>
+        </div>
+        <div class="sec-2">
+            <div id="options">
+                <!-- <img src="rock.jpg" alt="">
+                <img src="paper.jpg" alt="">
+                <img src="scissor.jpg" alt=""> -->
+            </div>
+            <button onclick="resetGame()" id="reset">reset</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
